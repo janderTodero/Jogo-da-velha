@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div class="player-inputs">
+        <input type="text" id="playerX" placeholder="Nome do Jogador X">
+        <input type="text" id="playerO" placeholder="Nome do Jogador O">
+        <button id="startButton" onclick="startGame()">Start</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    <div class="game-board" id="game-board">
+        <div class="cell" id="cell-0" onclick="makeMove(0)"></div>
+        <div class="cell" id="cell-1" onclick="makeMove(1)"></div>
+        <div class="cell" id="cell-2" onclick="makeMove(2)"></div>
+        <div class="cell" id="cell-3" onclick="makeMove(3)"></div>
+        <div class="cell" id="cell-4" onclick="makeMove(4)"></div>
+        <div class="cell" id="cell-5" onclick="makeMove(5)"></div>
+        <div class="cell" id="cell-6" onclick="makeMove(6)"></div>
+        <div class="cell" id="cell-7" onclick="makeMove(7)"></div>
+        <div class="cell" id="cell-8" onclick="makeMove(8)"></div>
+    </div>
+    <button id="resetButton" onclick="resetGame()" style="display: none;">Reiniciar</button>
+
+    <div class="message-screen" id="message-screen">
+        <div class="message-content">
+            <h2 id="message"></h2>
+            <button onclick="resetGame()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
